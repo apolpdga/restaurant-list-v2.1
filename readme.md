@@ -1,4 +1,3 @@
-![image] https://github.com/apolpdga/restaurant-list-v2.0/tree/main/readmePic/myRestaruantList.JPG
 ### 功能
 1. 新增餐廳
 2. 瀏覽所有餐廳
@@ -70,3 +69,5 @@ mongodb connected!
 8. method-override ^3.0.0
 9. Bootstrap v5.13
 10. Font-awesome
+
+![網站畫面](./readmePic/myRestaruantList.JPG)
