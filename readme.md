@@ -1,3 +1,4 @@
+![image] https://github.com/apolpdga/restaurant-list-v2.0/tree/main/readmePic/myRestaruantList.JPG
 ### 功能
 1. 新增餐廳
 2. 瀏覽所有餐廳
