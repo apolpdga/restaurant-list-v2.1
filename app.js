@@ -94,8 +94,6 @@ app.get('/restaurants/:restaurant_id', (req, res) => {
     .catch(error => console.log(error))
 })
 
-
-
 //修改資料
 //渲染edit頁面
 app.get('/restaurants/:restaurant_id/edit', (req, res) => {
@@ -129,7 +127,6 @@ app.post('/restaurants/:restaurant_id/edit', (req, res) => {
     .then(() => res.redirect(`/restaurants/${id}`))
     .catch(error => console.log(error))
 })
-
 
 //刪除資料
 app.post('/restaurants/:id/delete', (req, res) => {

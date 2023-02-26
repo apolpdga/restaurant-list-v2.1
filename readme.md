@@ -1,48 +1,32 @@
-###介紹
-####餐廳清單：提供使用者瀏覽餐廳資訊，例如:餐廳類別、地址、評分、描述等。
+### 功能
+#### 新增餐廳
+#### 瀏覽所有餐廳
+#### 查看餐廳詳細資訊
+#### 搜尋餐廳
+#### 修改餐廳資訊
+#### 刪除餐廳
 
-###功能列表
-####搜尋：依照餐廳名稱
-####檢視：餐廳資訊(類別、地址、電話、評分、圖片及 Google Map)
+### 開始使用
+#### 1. 請先確認本地端有安裝 Node.js 及 npm
+#### 2. 開啟終端機(Terminal)，cd 到存放專案本機位置，執行 git clone https://github.com/apolpdga/restaurant-list-v2.0.git
+#### 3. cd restaurant-list-v2.0 以切換至專案資料夾
+#### 4. 安裝需要的套件
+#### 5. 安裝完成後，於專案資料夾下新增.eve檔案，並於其中加入以下資料：MongoDBMONGODB_URI=mongodb+srv://<Your MongoDB Account>:<Your MongoDB Password>@cluster0.xxxx.xxxx.net/<Your MongoDB Table>?retryWrites=true&w=majority
+#### 6. 執行專案: npm run start
+#### 若出現此訊息表示執行順利，在瀏覽器輸入以下網址開始使用
+App is running on http://localhost:3000 mongodb connected!
 
-###環境建置
-####Node.js
-####Node Package manager
-####Nodemon
-####Express 4.16.4
-####Express handlebars 3.0.0
-####Boostrap 5.1.3
-####Font-awesome 5.8.1
+#### 如果要暫停使用，請在終端機輸入 ctrl + c，再關閉瀏覽器 
+#### 如有需要生成種子資料請輸入以下指令: npm run seed
 
-###使用方式
-
-1. 開啟終端機(Terminal)
-cd 到存放專案本機位置並執行:git clone [https://github.com/Eason0in/Restaurant-CRUD.git](https://github.com/Eason0in/Restaurant-CRUD.git)
-2. cd Restaurant-CRUD //切至專案資料夾
-npm install //安裝套件
-3. 開啟程式
-node app.js //執行程式
-終端機顯示 db is connected! 即啟動完成，請至http://localhost:3000開始使用程式
-
-
-1.將專案 clone 至本地端
-開啟終端機(Terminal)，cd 到存放專案位置後執行：
-git clone https://github.com/apolpdga/Restaurant-List
-
-2.安裝 npm 套件
-(1) cd Restaurant-CRUD //切至專案資料夾
-(2) npm install //安裝套件 npm 套件
-
-3.安裝 express 套件
-npm i express@4.16.4
-
-4.安裝 handlebars
-npm i express-handlebars@3.0.0
-
-6.啟動伺服器
-node app.js
-
-7.若看見下列訊息則代表順利運行，代表啟動成功
-Express is listening on localhost:3000
-
-8.你可以在瀏覽器輸入 http://localhost:3000 瀏覽內容
+### 開發工具
+#### Node.js ^14.16.0
+#### Nodemon
+#### Express ^4.18.2
+#### Express-handlebars ^3.0.0
+#### MongoDB
+#### mongoose ^5.13.15
+#### dotenv ^16.0.3
+#### method-override ^3.0.0
+#### Bootstrap v5.13
+#### Font-awesome
