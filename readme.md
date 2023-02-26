@@ -58,14 +58,14 @@ mongodb connected!
 如果要暫停使用，請在終端機輸入 ctrl + c，再關閉瀏覽器 
 如有需要生成種子資料請輸入以下指令: npm run seed
 ```
-### 開發工具 & 安裝方式
+### 開發工具
 1. Node.js ^14.16.0
 2. Nodemon
 3. Express ^4.16.4
 4. Express-handlebars ^3.0.0
 5. MongoDB
 6. mongoose ^5.9.7
-7. dotenv: npm i dotenv -D
+7. dotenv
 8. method-override ^3.0.0
-9. Bootstrap v5.13: 程式碼內建，無須安裝
-10. Font-awesome: 程式碼內建，無須安裝
+9. Bootstrap v5.13
+10. Font-awesome
