@@ -70,4 +70,6 @@ mongodb connected!
 9. Bootstrap v5.13
 10. Font-awesome
 
-![網站畫面](./readmePic/myRestaruantList.JPG)
+### 網站畫面
+
+![首頁](./readmePic/myRestaruantList.JPG)
