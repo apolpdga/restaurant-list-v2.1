@@ -1,16 +1,13 @@
-const mongoose = require('mongoose')
-const Restaurant = require('../restaurant') // 載入 Restaurant model
-const restaurantList = require("../../restaurant.json").results
-
+//引入 dotenv，讓 Node.js 能抓到寫在 .env 上的環境變數
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
 
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-const db = mongoose.connection
-db.on('error', () => {
-  console.log('mongodb error!')
-})
+const Restaurant = require('../restaurant.js') // 載入 Restaurant model 設定
+const restaurantList = require("../../restaurant.json").results // 載入 Restaurant 資料
+const db = require('../../config/mongoose')// Mongoose 連線
+
+//一旦連上mongoDB，即建置種子資料
 db.once('open', () => {
   console.log("running restaurantSeeder script...")
 

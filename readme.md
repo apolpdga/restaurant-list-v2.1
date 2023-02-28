@@ -1,20 +1,11 @@
 ### 功能
-1. 新增餐廳
-2. 瀏覽所有餐廳
-3. 查看餐廳詳細資訊
-4. 搜尋餐廳
-5. 修改餐廳資訊
-6. 刪除餐廳
-
-### 開始使用
-1. 請先確認本地端有安裝 Node.js 及 npm
-2. 開啟終端機(Terminal)，cd 到存放專案本機位置，執行 git clone https://github.com/apolpdga/restaurant-list-v2.0.git
-3. cd restaurant-list-v2.0 以切換至專案資料夾
-4. 安裝需要的套件
-5. 安裝完成後，於專案資料夾下新增.eve檔案，並於其中加入以下資料：MongoDBMONGODB_URI=mongodb+srv://<Your MongoDB Account>:<Your MongoDB Password>@cluster0.xxxx.xxxx.net/<Your MongoDB Table>?retryWrites=true&w=majority
-6. 執行專案: npm run dev，若出現以下訊息表示執行順利，在瀏覽器輸入 http://localhost:3000 即可進入網頁
-
-
+- 新增餐廳
+- 瀏覽所有餐廳
+- 查看餐廳詳細資訊
+- 搜尋餐廳
+- 排序餐廳
+- 修改餐廳資訊
+- 刪除餐廳
 
 ### 安裝與執行步驟
 #### 0. 請先確認已有申請 mongoDB 帳號
@@ -40,7 +31,7 @@ npm i express-handlebars@3.0.0
 ```
 npm i mongoose@5.9.7
 ```
-#### 6.設定環境變數，於專案資料夾下新增.env檔案，檔案內容如下
+#### 6.設定環境變數，於專案資料夾下新增.env檔案，並於檔案內MongoDB連線資料，範例如下：
 ```
 MongoDBMONGODB_URI=mongodb+srv://<Your MongoDB Account>:<Your MongoDB Password>@cluster0.xxxx.xxxx.net/<Your MongoDB Table>?retryWrites=true&w=majority
 ```

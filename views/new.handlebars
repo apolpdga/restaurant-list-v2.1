@@ -87,7 +87,8 @@
             評分
             <span class="text-danger">*</span>
           </label>
-          <input type="number" class="form-control" id="rating" placeholder="3.3" name="rating" required />
+          <input type="number" class="form-control" id="rating" placeholder="3.3" min="0" max="5" step="0.1"
+            name="rating" required />
         </div>
 
         {{!-- 敘述 --}}
