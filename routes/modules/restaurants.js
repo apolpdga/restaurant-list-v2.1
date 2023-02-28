@@ -39,10 +39,9 @@ router.get('/:restaurant_id/edit', (req, res) => {
     .catch(error => console.log(error))
 })
 //edit資料，並導回detail頁
-router.post('/:restaurant_id/edit', (req, res) => {
+router.put('/:restaurant_id', (req, res) => {
   const id = req.params.restaurant_id
   const { name, name_en, category, image, location, phone, google_map, rating, description, } = req.body
-  console.log(req.body)
   // 「解構賦值(destructuring assignment)」:把物件裡的屬性一項項拿出來存成變數時，可以使用的一種縮寫
   return Restaurant.findById(id)
     .then(restaurant => {
@@ -62,7 +61,7 @@ router.post('/:restaurant_id/edit', (req, res) => {
 })
 
 //刪除資料
-router.post('/:id/delete', (req, res) => {
+router.delete('/:id', (req, res) => {
   const id = req.params.id
   return Restaurant.findById(id)
     .then(restaurant => restaurant.remove())

@@ -3,8 +3,9 @@ const express = require('express')
 const app = express()
 
 // start and listen on the Express server
-app.listen(3000, () => {
-  console.log('App is running on http://localhost:3000')
+const port = 3000
+app.listen(port, () => {
+  console.log(`App is running on http://localhost:${port}`)
 })
 
 //引入 dotenv，讓 Node.js 能抓到寫在 .env 上的環境變數
