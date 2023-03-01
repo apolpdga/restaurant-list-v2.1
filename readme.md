@@ -12,11 +12,11 @@
 #### 1. 將專案 clone 至本地端
 ```
 開啟終端機(Terminal)，cd 到存放專案位置後執行：
-git clone https://github.com/apolpdga/restaurant-list-v2.0.git
+git clone https://github.com/apolpdga/restaurant-list-v2.1.git
 ```
 #### 2. 安裝 npm 套件
 ```
-(1) cd restaurant-list-v2.0    //切至專案資料夾
+(1) cd restaurant-list-v2.1    //切至專案資料夾
 (2) npm install                //安裝套件 npm 套件
 ```
 #### 3. 使用 npm 安裝 express 套件
